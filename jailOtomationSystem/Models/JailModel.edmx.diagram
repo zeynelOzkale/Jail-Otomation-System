@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="1cca8a98594a4a81bc53e264df3778ae" Name="Diagram1" ZoomLevel="86">
+        <EntityTypeShape EntityType="JailModel.AdministratorAccount" Width="1.5" PointX="10" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="JailModel.facility" Width="1.5" PointX="0.75" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="JailModel.Job" Width="1.5" PointX="3" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="JailModel.officer" Width="1.5" PointX="7.75" PointY="4.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="JailModel.officerRoom" Width="1.5" PointX="7.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="JailModel.officerStayIn" Width="1.5" PointX="10" PointY="1.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="JailModel.OfficerWorkA" Width="1.5" PointX="13" PointY="3" IsExpanded="true" />
+        <EntityTypeShape EntityType="JailModel.prisonerCell" Width="1.5" PointX="3" PointY="9.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="JailModel.prisonerSatyIn" Width="1.5" PointX="5.25" PointY="6" IsExpanded="true" />
+        <EntityTypeShape EntityType="JailModel.PrisonerWorkA" Width="1.5" PointX="5.5" PointY="2.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="JailModel.sysdiagram" Width="1.5" PointX="8.125" PointY="10.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="JailModel.time" Width="1.5" PointX="9.25" PointY="8.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="JailModel.visit" Width="1.5" PointX="5.25" PointY="10.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="JailModel.visitTime" Width="1.5" PointX="11.25" PointY="11" IsExpanded="true" />
+        <AssociationConnector Association="JailModel.FK_AdministratorAccount_officer" ManuallyRouted="false" />
+        <AssociationConnector Association="JailModel.FK_Job_facility" ManuallyRouted="false" />
+        <AssociationConnector Association="JailModel.FK_OfficerWorkAs_Job" ManuallyRouted="false" />
+        <AssociationConnector Association="JailModel.FK_PrisonerWorkAs_Job" ManuallyRouted="false" />
+        <AssociationConnector Association="JailModel.FK_officerStayIn_officer" ManuallyRouted="false" />
+        <AssociationConnector Association="JailModel.FK_OfficerWorkAs_officer" ManuallyRouted="false" />
+        <AssociationConnector Association="JailModel.FK_officerStayIn_officerRoom" ManuallyRouted="false" />
+        <AssociationConnector Association="JailModel.FK_prisonerSatyIn_prisonerCell" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="JailModel.Prisoner" Width="1.5" PointX="2.375" PointY="5.125" />
+        <AssociationConnector Association="JailModel.FK_prisonerSatyIn_Prisoner" />
+        <AssociationConnector Association="JailModel.FK_PrisonerWorkAs_Prisoner" />
+        <AssociationConnector Association="JailModel.FK_visit_Prisoner" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

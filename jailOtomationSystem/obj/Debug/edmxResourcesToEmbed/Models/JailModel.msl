@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="JailModelStoreContainer" CdmEntityContainer="JailEntities">
+    <EntitySetMapping Name="AdministratorAccounts">
+      <EntityTypeMapping TypeName="JailModel.AdministratorAccount">
+        <MappingFragment StoreEntitySet="AdministratorAccount">
+          <ScalarProperty Name="administratorID" ColumnName="administratorID" />
+          <ScalarProperty Name="OfficerID" ColumnName="OfficerID" />
+          <ScalarProperty Name="username" ColumnName="username" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="roll" ColumnName="roll" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="facilities">
+      <EntityTypeMapping TypeName="JailModel.facility">
+        <MappingFragment StoreEntitySet="facility">
+          <ScalarProperty Name="facilityID" ColumnName="facilityID" />
+          <ScalarProperty Name="name" ColumnName="name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Jobs">
+      <EntityTypeMapping TypeName="JailModel.Job">
+        <MappingFragment StoreEntitySet="Job">
+          <ScalarProperty Name="jobID" ColumnName="jobID" />
+          <ScalarProperty Name="jobTitle" ColumnName="jobTitle" />
+          <ScalarProperty Name="dailyStartingTime" ColumnName="dailyStartingTime" />
+          <ScalarProperty Name="dailyEndingTime" ColumnName="dailyEndingTime" />
+          <ScalarProperty Name="JobDescription" ColumnName="JobDescription" />
+          <ScalarProperty Name="facilityid" ColumnName="facilityid" />
+          <ScalarProperty Name="availablePositionsCount" ColumnName="availablePositionsCount" />
+          <ScalarProperty Name="workerType" ColumnName="workerType" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="officers">
+      <EntityTypeMapping TypeName="JailModel.officer">
+        <MappingFragment StoreEntitySet="officer">
+          <ScalarProperty Name="officerID" ColumnName="officerID" />
+          <ScalarProperty Name="rank" ColumnName="rank" />
+          <ScalarProperty Name="citizinID" ColumnName="citizinID" />
+          <ScalarProperty Name="dateOfBirth" ColumnName="dateOfBirth" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="surname" ColumnName="surname" />
+          <ScalarProperty Name="imageURL" ColumnName="imageURL" />
+          <ScalarProperty Name="AddedDate" ColumnName="AddedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="officerRooms">
+      <EntityTypeMapping TypeName="JailModel.officerRoom">
+        <MappingFragment StoreEntitySet="officerRoom">
+          <ScalarProperty Name="officerRoomID" ColumnName="officerRoomID" />
+          <ScalarProperty Name="address" ColumnName="address" />
+          <ScalarProperty Name="area" ColumnName="area" />
+          <ScalarProperty Name="isActive" ColumnName="isActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="officerStayIns">
+      <EntityTypeMapping TypeName="JailModel.officerStayIn">
+        <MappingFragment StoreEntitySet="officerStayIn">
+          <ScalarProperty Name="officerRoomid" ColumnName="officerRoomid" />
+          <ScalarProperty Name="officerid" ColumnName="officerid" />
+          <ScalarProperty Name="since" ColumnName="since" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OfficerWorkAs">
+      <EntityTypeMapping TypeName="JailModel.OfficerWorkA">
+        <MappingFragment StoreEntitySet="OfficerWorkAs">
+          <ScalarProperty Name="officerid" ColumnName="officerid" />
+          <ScalarProperty Name="jobid" ColumnName="jobid" />
+          <ScalarProperty Name="since" ColumnName="since" />
+          <ScalarProperty Name="until" ColumnName="until" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="prisonerCells">
+      <EntityTypeMapping TypeName="JailModel.prisonerCell">
+        <MappingFragment StoreEntitySet="prisonerCell">
+          <ScalarProperty Name="prisonerCellID" ColumnName="prisonerCellID" />
+          <ScalarProperty Name="capacity" ColumnName="capacity" />
+          <ScalarProperty Name="cellType" ColumnName="cellType" />
+          <ScalarProperty Name="area" ColumnName="area" />
+          <ScalarProperty Name="address" ColumnName="address" />
+          <ScalarProperty Name="availableCount" ColumnName="availableCount" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="prisonerSatyIns">
+      <EntityTypeMapping TypeName="JailModel.prisonerSatyIn">
+        <MappingFragment StoreEntitySet="prisonerSatyIn">
+          <ScalarProperty Name="prisonerid" ColumnName="prisonerid" />
+          <ScalarProperty Name="prisonerCellid" ColumnName="prisonerCellid" />
+          <ScalarProperty Name="since" ColumnName="since" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PrisonerWorkAs">
+      <EntityTypeMapping TypeName="JailModel.PrisonerWorkA">
+        <MappingFragment StoreEntitySet="PrisonerWorkAs">
+          <ScalarProperty Name="prisonerid" ColumnName="prisonerid" />
+          <ScalarProperty Name="jobid" ColumnName="jobid" />
+          <ScalarProperty Name="since" ColumnName="since" />
+          <ScalarProperty Name="until" ColumnName="until" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="JailModel.sysdiagram">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="times">
+      <EntityTypeMapping TypeName="JailModel.time">
+        <MappingFragment StoreEntitySet="times">
+          <ScalarProperty Name="time1" ColumnName="time" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="visits">
+      <EntityTypeMapping TypeName="JailModel.visit">
+        <MappingFragment StoreEntitySet="visit">
+          <ScalarProperty Name="visitorID" ColumnName="visitorID" />
+          <ScalarProperty Name="prisonerid" ColumnName="prisonerid" />
+          <ScalarProperty Name="visiterName" ColumnName="visiterName" />
+          <ScalarProperty Name="visiterSurname" ColumnName="visiterSurname" />
+          <ScalarProperty Name="relashionship" ColumnName="relashionship" />
+          <ScalarProperty Name="dateOfVisit" ColumnName="dateOfVisit" />
+          <ScalarProperty Name="purposeOfVisit" ColumnName="purposeOfVisit" />
+          <ScalarProperty Name="stuffBringed" ColumnName="stuffBringed" />
+          <ScalarProperty Name="IsAccepted" ColumnName="IsAccepted" />
+          <ScalarProperty Name="VisitTime" ColumnName="VisitTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="visitTimes">
+      <EntityTypeMapping TypeName="JailModel.visitTime">
+        <MappingFragment StoreEntitySet="visitTimes">
+          <ScalarProperty Name="dateOfVisit" ColumnName="dateOfVisit" />
+          <ScalarProperty Name="VisitTime1" ColumnName="VisitTime" />
+          <ScalarProperty Name="num" ColumnName="num" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="GetAvailableAppointments" FunctionName="JailModel.Store.GetAvailableAppointments" />
+    <EntitySetMapping Name="Prisoners">
+      <EntityTypeMapping TypeName="JailModel.Prisoner">
+        <MappingFragment StoreEntitySet="Prisoner">
+          <ScalarProperty Name="imageURL" ColumnName="imageURL" />
+          <ScalarProperty Name="dateOfBirth" ColumnName="dateOfBirth" />
+          <ScalarProperty Name="surname" ColumnName="surname" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="citizinid" ColumnName="citizinid" />
+          <ScalarProperty Name="prisonerID" ColumnName="prisonerID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
